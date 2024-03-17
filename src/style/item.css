@@ -1,0 +1,81 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+    width: 80%;
+}
+
+.item:hover {
+    background-color: #f9f9f9;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.details {
+    flex: 1;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 5px;
+    color: #666;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.setting {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.decr-button,
+.incr-button
+ {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.delete-button {
+    background-color: #6e6a6a;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.decr-button:hover,
+.incr-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button:hover {
+    background-color: #c42f37;
+}
+
+.amount {
+    font-size: 16px;
+    font-weight: bold;
+}

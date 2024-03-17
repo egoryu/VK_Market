@@ -1,0 +1,13 @@
+.cart {
+    flex: 1;
+    padding: 10px;
+}
+
+.cart h2 {
+    text-align: center;
+}
+
+.cart p {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
