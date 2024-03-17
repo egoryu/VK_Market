@@ -1,0 +1,15 @@
+.products {
+    flex: 3;
+    padding: 10px;
+    border-right: 1px solid black;
+}
+
+.products h2 {
+    text-align: center;
+}
+
+.load {
+    margin: 10% 0;
+    text-align: center;
+    font-size: 2rem;
+}

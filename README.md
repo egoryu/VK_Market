@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+## Задача
+Создать React-приложение для корзины товаров магазина на основе компонентов-функций.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Требования
+- Макет из 2 колонок шириной 3:1 (применить дизайн-систему или flexbox/grid в CSS).
 
-## Available Scripts
+### Левая колонка
+- Вывод вертикального списка карточек товаров в корзине.
 
-In the project directory, you can run:
+#### Карточка товара:
+- Фото товара, название (под ним описание), количество, стоимость.
 
-### `npm start`
+#### Действия с товаром:
+1. Изменить количество (кнопка с иконкой +/- и ограничением - минимум 1 товар, максимум 10).
+2. Удалить (кнопка с иконкой корзины).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Для хранения состояния приложения желательно применять стейт-менеджер (так у тебя больше шансов реальных проектах они повсеместно применяются).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Применять можно любой из основных стейт-менеджеров: Redux, MobX, Effector (в крайнем случае вариант с useState/useReducer и React context API тоже рассмотрим).
 
-### `npm test`
+### Правая колонка
+- Вывод текста "Итого: <сумма> руб." и итоговой суммы заказа по всем товарам, учитывая количества каждого товара в корзине.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Данные
+- Данные для корзины можно сделать вручную (тестовые), или взять за основу отсюда (достаточно несколько товаров):
+    - [https://dummyjson.com/carts/1](https://dummyjson.com/carts/1)
+    - [https://fakestoreapi.com/products](https://fakestoreapi.com/products)
 
-### `npm run build`
+- Разместить в отдельном файле.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Изменение количества товара/удаление будет производиться локально в приложении (стейт-менеджере).
